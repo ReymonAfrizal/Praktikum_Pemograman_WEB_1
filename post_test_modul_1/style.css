@@ -1,0 +1,122 @@
+/* Reset Basic & Font Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333333;
+    line-height: 1.6;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Wrapper / Main Alignment */
+header, main, footer {
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #003366, #0055a5);
+    color: #ffffff;
+    padding: 35px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+
+header h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #e0e0e0;
+}
+
+/* Main Content Styling */
+main h3 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #0055a5;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Program Studi Cards */
+section {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-left: 5px solid #0055a5;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+section h4 {
+    color: #003366;
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+section p {
+    margin-bottom: 10px;
+    color: #555555;
+}
+
+section p:last-child {
+    margin-bottom: 0;
+}
+
+section strong {
+    color: #222222;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    color: #777777;
+    font-size: 0.9rem;
+    border-top: 1px solid #dddddd;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    header h2 {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 18px;
+    }
+}
